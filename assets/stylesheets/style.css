@@ -3,26 +3,30 @@ body{
     color: #f2f2f2;
     text-align: center
 }
+#myVideo{
+  width: 100%;
+  
 
-.bg-img {
-    /*IMAGE SIZE*/
+}
+/* .bg-img {
+    /*IMAGE SIZE
     width: 100%;
     height: 700px;
 
     /* The image used */
-    background-image: url("../images/tattoo-header-1.jpg");
+    /* background-image: url("../images/tattoo-header-1.jpg"); 
   
     min-height: 380px;
   
-    /* Center and scale the image nicely */
+    /* Center and scale the image nicely 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
   
-    /* Needed to position the navbar */
+    /* Needed to position the navbar 
     position: relative;
-  }
+  } */
   
   /* Position the navbar container inside the image */
 
@@ -56,7 +60,7 @@ body{
     border-color:black;}
 
 .navbar-light .navbar-nav .nav-link {
-        color:black;
+        color:white;
         padding-right: 30px;
 }
 
@@ -95,6 +99,13 @@ div.gallery {
     
     
 }
+
+.mainsec {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 /*@MEDIA STARTS*/
 @media screen and (max-width: 600px) {
     #searchBtn {
