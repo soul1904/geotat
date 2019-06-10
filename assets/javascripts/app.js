@@ -14,8 +14,19 @@ function showPosition(position) {
 }
 
 function displayTatooShopResult(shopData) {
-  $("#populator").append("<p>" + shopData.name + " | " + "Rating: " + shopData.rating + " | " + shopData.formatted_address + " | " + shopData.photos[0].html_attributions[0]) + "target='_blank'";
+
+  // create a <p> Tag and store it  in a variable
+
+  var pTag = $("<p>" + shopData.name + " | " + "Rating: " + shopData.rating + " | " + shopData.formatted_address + " | </p> ");
+  //  create an <a> Tag and store it in a variable
+  var aTag = $(shopData.photos[0].html_attributions[0]).attr("target", "_blank");
+  // the a tag goes in the p tag
+ pTag.append(aTag);
+  // append both to the populator id
+  $("#populator").append(pTag);
 }
+
+
 
 var queryUrl = "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/textsearch/json?query=tatoos+in+San+Diego&key=AIzaSyDYw0kEgd0PxKKZZ5GGBBgeygLHxpwv9bA";
 var apiKey = "AIzaSyDYw0kEgd0PxKKZZ5GGBBgeygLHxpwv9bA";
