@@ -1,158 +1,164 @@
 body{
-    background-color: black;
-    color: #f2f2f2;
-    text-align: center
+  background-color: black;
+  color: #f2f2f2;
+  text-align: center
 }
 #myVideo{
-  width: 100%;
-  
+width: 100%;
+
 
 }
 /* .bg-img {
-    /*IMAGE SIZE
-    width: 100%;
-    height: 700px;
+background-attachment: fixed;
+} */
 
-    /* The image used */
-    /* background-image: url("../images/tattoo-header-1.jpg"); 
-  
-    min-height: 380px;
-  
-    /* Center and scale the image nicely 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  
-    /* Needed to position the navbar 
-    position: relative;
-  } */
-  
-  /* Position the navbar container inside the image */
+  /* The image used */
+  /* background-image: url("../images/tattoo-header-1.jpg"); 
 
-  
-  /* The navbar */
-  .topnav {
-    overflow: hidden;
-   
-     }
-  
-  /* Navbar links */
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-    
-  }
-  
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-    
-  }
+  min-height: 380px;
 
-  .btn-outline-success {
-    color: black;
-    border-color:black;}
+  /* Center and scale the image nicely 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  /* Needed to position the navbar 
+  position: relative;
+} */
+
+/* Position the navbar container inside the image */
+
+
+/* The navbar */
+.topnav {
+  overflow: hidden;
+ 
+   }
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+
+.topnav a:hover {
+  color: #cc3535;    
+}
+
+
+.btn-outline-success {
+  color: black;
+  border-color:black;}
 
 .navbar-light .navbar-nav .nav-link {
-        color:white;
-        padding-right: 30px;
+      color:white;
+      padding-right: 30px;
 }
 
 /*IMG CONTAINER*/
 #imgCon{
-    color: #f2f2f2;
+  color: #f2f2f2;
 }
 /*IMG STYLING*/
 div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
-  }
-  
-  div.gallery:hover {
-    border: 1px solid #777;
-  }
-  
-  div.gallery img {
-    width: 100%;
-    height: auto;
-  }
-  
-  div.desc {
-    padding: 15px;
-    text-align: center;
-  }
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
 #imgRow{
-    align-content: center;
-    align-items: center;
-    width: 100%;
-    
-    margin-left: 15%;
-    
-    
-    
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  
+  margin-left: 15%;
+  
+  
+  
 }
 
 .mainsec {
-  position: absolute;
-  top: 0;
-  width: 100%;
+position: absolute;
+top: 0;
+width: 100%;
+
 }
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+  animation-timing-function: ease-in;
+}
+
 
 /*@MEDIA STARTS*/
 @media screen and (max-width: 600px) {
-    #searchBtn {
-        display: none;
-    }
-    .bg-img {
-        width: auto ;
-        max-width: auto ;
-        height: auto ;
-        margin: 0 auto;
-        background-image: url("../images/header-mobile-640-new.jpg");
-        
-    }
-    
+  #searchBtn {
+      display: none;
   }
-
-  @media screen and (max-width: 768px) {
-      #searchBtn {
-          display: none;
-      }
-
-    .bg-img {
-        width: auto ;
-        max-width: auto ;
-        height: 100% ;
-        max-width: 100%;
-        margin: 0 auto;
-        background-image: url("../images/header-mobile-640-new.jpg");
-        
-    }
-    
+  .bg-img {
+      width: auto ;
+      max-width: auto ;
+      height: auto ;
+      margin: 0 auto;
+      background-image: url("../images/header-mobile-640-new.jpg");
+      
   }
-
-  @media screen and (max-width: 992px) {
-    #searchBtn {
-        display: none;
-    }
-    .bg-img {
-        width: auto ;
-        max-width: auto ;
-        height: auto ;
-        margin: 0 auto;
-        background-image: url("../images/header-mobile-640-new.jpg");
-        
-    }
-    
-  }
-
   
+}
+
+@media screen and (max-width: 768px) {
+    #searchBtn {
+        display: none;
+    }
+
+  .bg-img {
+      width: auto ;
+      max-width: auto ;
+      height: 100% ;
+      max-width: 100%;
+      margin: 0 auto;
+      background-image: url("../images/header-mobile-640-new.jpg");
+      
+  }
+  
+}
+
+@media screen and (max-width: 992px) {
+  #searchBtn {
+      display: none;
+  }
+  .bg-img {
+      width: auto ;
+      max-width: auto ;
+      height: auto ;
+      margin: 0 auto;
+      background-image: url("../images/header-mobile-640-new.jpg");
+      
+  }
+  
+}
+
+
 
