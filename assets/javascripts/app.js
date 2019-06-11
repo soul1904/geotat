@@ -44,6 +44,7 @@ $("#black-and-gray").on("click", function () {
 
     // alert($(this).val());
     // link the API results here
+    $("#populator").empty();
     $("#populator").append("<p>" + saveResponse.results[0].name + " | " + "Rating: " + saveResponse.results[0].rating + " | " + saveResponse.results[0].formatted_address + " | " + saveResponse.results[0].photos[0].html_attributions[0]);
     displayTatooShopResult(response.results[0]);
     displayTatooShopResult(response.results[1]);
@@ -66,7 +67,7 @@ $("#new-school").on("click", function () {
   }).then(function (response) {
     console.log(response);
     saveResponse = response;
-
+    $("#populator").empty();
     $("#populator").append("<p>" + saveResponse.results[0].name + " | " + "Rating: " + saveResponse.results[0].rating + " | " + saveResponse.results[0].formatted_address + " | " + saveResponse.results[0].photos[0].html_attributions[0]);
     displayTatooShopResult(response.results[0]);
     displayTatooShopResult(response.results[1]);
@@ -92,6 +93,7 @@ $("#old-school").on("click", function () {
     saveResponse = response;
     // alert($(this).val());
     // link the API results here
+    $("#populator").empty();
     $("#populator").append("<p>" + saveResponse.results[0].name + " | " + "Rating: " + saveResponse.results[0].rating + " | " + saveResponse.results[0].formatted_address + " | " + saveResponse.results[0].photos[0].html_attributions[0]);
     displayTatooShopResult(response.results[0]);
     displayTatooShopResult(response.results[1]);
@@ -100,6 +102,7 @@ $("#old-school").on("click", function () {
 
 
   });
+});
 
 
   $("#japanese").on("click", function () {
@@ -115,6 +118,7 @@ $("#old-school").on("click", function () {
       saveResponse = response;
       // alert($(this).val());
       // link the API results here
+      $("#populator").empty();
       $("#populator").append("<p>" + saveResponse.results[0].name + " | " + "Rating: " + saveResponse.results[0].rating + " | " + saveResponse.results[0].formatted_address + " | " + saveResponse.results[0].photos[0].html_attributions[0]);
       displayTatooShopResult(response.results[0]);
       displayTatooShopResult(response.results[1]);
@@ -125,4 +129,3 @@ $("#old-school").on("click", function () {
   });
 
 
-});
