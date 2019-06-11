@@ -15,17 +15,15 @@ function showPosition(position) {
 
 function displayTatooShopResult(shopData) {
 
-  // create a <p> Tag and store it  in a variable
-
+  // create a <p> tag and store it in a variable
   var pTag = $("<p>" + shopData.name + " | " + "Rating: " + shopData.rating + " | " + shopData.formatted_address + " | </p> ");
-  //  create an <a> Tag and store it in a variable
+  //  create an <a> tag and store it in a variable
   var aTag = $(shopData.photos[0].html_attributions[0]).attr("target", "_blank");
-  // the a tag goes in the p tag
- pTag.append(aTag);
+  // the <a> tag goes in the <p> tag
+  pTag.append(aTag);
   // append both to the populator id
   $("#populator").append(pTag);
 }
-
 
 
 var queryUrl = "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/textsearch/json?query=tatoos+in+San+Diego&key=AIzaSyDYw0kEgd0PxKKZZ5GGBBgeygLHxpwv9bA";
@@ -36,8 +34,6 @@ $.ajax({
   method: "GET"
 }).then(function (response) {
   console.log(response)
-
-
 
   // this function records the changes in the tattoo-style-selection
   $("#tattoo-style-select").on("change", function () {
@@ -78,12 +74,14 @@ $.ajax({
       displayTatooShopResult(response.results[13]);
       displayTatooShopResult(response.results[18]);
     }
+
+    else if ($(this).val() == "Select") {
+      $("#populator").empty();
+    }
+
     else {
       return
     }
-
   });
-
-
 });
 
