@@ -1,17 +1,16 @@
-var longitude
+// global variables
+var longitude;
+var latitude;
 
-var latitude
 var value;
 
+// whenever the user clicks on ANY of the style buttons, the code picks up the data-tatoo-style from the clildren <a> tags 
 $(".gallery").on("click", function () {
   value = $(this).children().attr("data-tattoo-style");
   alert(value);
 });
 
-
-
-
-///GEO LOCATION API
+// GEO LOCATION API
 var x = document.getElementById("demo");
 
 function getLocation() {
@@ -22,15 +21,18 @@ function getLocation() {
   }
 }
 
+// call user position function 
 getLocation();
 
 function showPosition(position) {
   console.log(position);
+
   longitude = position.coords.longitude;
 
   latitude = position.coords.latitude;
 }
 
+// set up the function to display the tatoo shops results
 function displayTatooShopResult(shopData) {
 
   // create a <p> tag and store it  in a variable
@@ -51,19 +53,23 @@ $(".gallery").on("click", function () {
   console.log(longitude);
 
   var queryUrl = "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/textsearch/json?query=" + value + "&location=" + latitude + "," + longitude + "&radius=20000&key=AIzaSyDYw0kEgd0PxKKZZ5GGBBgeygLHxpwv9bA";
-  var apiKey = "AIzaSyDYw0kEgd0PxKKZZ5GGBBgeygLHxpwv9bA";
   console.log(queryUrl)
   // Performing our AJAX GET request
   var saveResponse;
+
   $.ajax({
     url: queryUrl,
     method: "GET"
   }).then(function (response) {
     console.log(response);
+
     saveResponse = response;
-    $("#populator").empty();
+
     // link the API results here
 
+    // empty the contect of the populator div so that it only shows results for the selected tattoo style and erases old results
+    $("#populator").empty();
+    
     for (var i = 0; i < Math.min(response.results.length, 5); i++) {
       displayTatooShopResult(response.results[i]);
       console.log(response.results[i])
