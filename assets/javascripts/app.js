@@ -68,5 +68,8 @@ $(".gallery").on("click", function () {
       displayTatooShopResult(response.results[i]);
       console.log(response.results[i])
     }
+    //SCROLL DOWN FUNCTION FOR RESULTS//
+    var elmnt = document.getElementById("populator");
+  elmnt.scrollIntoView();
   });
 });
