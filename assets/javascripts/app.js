@@ -73,7 +73,7 @@ $(".gallery").on("click", function () {
     // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
     $('html, body').animate({
       scrollTop: $("#populator").offset().top
-    }, 800);
+    }, 900);
   });
 });
 
