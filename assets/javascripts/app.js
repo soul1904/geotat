@@ -11,7 +11,6 @@ $(".gallery").on("click", function () {
 
 // GEO LOCATION API
 var x = document.getElementById("demo");
-
 function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
@@ -27,7 +26,6 @@ function showPosition(position) {
   console.log(position);
 
   longitude = position.coords.longitude;
-
   latitude = position.coords.latitude;
 }
 
