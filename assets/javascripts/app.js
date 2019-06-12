@@ -21,10 +21,6 @@ function getLocation() {
     x.innerHTML = "Geolocation is not supported by this browser.";
   }
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> ab4fa6160ffecdf6069be2e23a2558dd6598c85a
 getLocation();
 
 function showPosition(position) {
@@ -48,62 +44,10 @@ function displayTatooShopResult(shopData) {
 
 
 // this function records the changes in the tattoo-style-selection
-<<<<<<< HEAD
-$("#black-and-gray").on("click", function () {
-  var queryUrl = "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/textsearch/json?query=black+gray+tatoos+in+San+Diego&key=AIzaSyDYw0kEgd0PxKKZZ5GGBBgeygLHxpwv9bA";
-  var apiKey = "AIzaSyDYw0kEgd0PxKKZZ5GGBBgeygLHxpwv9bA";
-  // Performing our AJAX GET request
-  var saveResponse;
-  $.ajax({
-    url: queryUrl,
-    method: "GET"
-  }).then(function (response) {
-    console.log(response);
-    saveResponse = response;
-
-    $("#populator").empty();
-    // alert($(this).val());
-    // link the API results here
-    $("#populator").append("<p>" + saveResponse.results[0].name + " | " + "Rating: " + saveResponse.results[0].rating + " | " + saveResponse.results[0].formatted_address + " | " + saveResponse.results[0].photos[0].html_attributions[0]);
-    displayTatooShopResult(response.results[0]);
-    displayTatooShopResult(response.results[1]);
-    displayTatooShopResult(response.results[10]);
-    displayTatooShopResult(response.results[2]);
-
-  });
-
-});
-
-$("#new-school").on("click", function () {
-
-  var queryUrl = "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/textsearch/json?query=new+school+tatoos+in+San+Diego&key=AIzaSyDYw0kEgd0PxKKZZ5GGBBgeygLHxpwv9bA";
-  var apiKey = "AIzaSyDYw0kEgd0PxKKZZ5GGBBgeygLHxpwv9bA";
-  // Performing our AJAX GET request
-  var saveResponse;
-  $.ajax({
-    url: queryUrl,
-    method: "GET"
-  }).then(function (response) {
-    console.log(response);
-    saveResponse = response;
-
-    $("#populator").empty();
-
-    $("#populator").append("<p>" + saveResponse.results[0].name + " | " + "Rating: " + saveResponse.results[0].rating + " | " + saveResponse.results[0].formatted_address + " | " + saveResponse.results[0].photos[0].html_attributions[0]);
-    displayTatooShopResult(response.results[0]);
-    displayTatooShopResult(response.results[1]);
-    displayTatooShopResult(response.results[10]);
-    displayTatooShopResult(response.results[2]);
-    // alert($(this).val());
-    // link the API results here
-
-  });
-=======
 $(".gallery").on("click", function () {
 
   console.log(latitude);
   console.log(longitude);
->>>>>>> ab4fa6160ffecdf6069be2e23a2558dd6598c85a
 
   var queryUrl = "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/textsearch/json?query=" + value + "&location=" + latitude + "," + longitude + "&radius=20000&key=AIzaSyDYw0kEgd0PxKKZZ5GGBBgeygLHxpwv9bA";
   var apiKey = "AIzaSyDYw0kEgd0PxKKZZ5GGBBgeygLHxpwv9bA";
@@ -116,13 +60,7 @@ $(".gallery").on("click", function () {
   }).then(function (response) {
     console.log(response);
     saveResponse = response;
-<<<<<<< HEAD
-
     $("#populator").empty();
-    // alert($(this).val());
-=======
-    $("#populator").empty();
->>>>>>> ab4fa6160ffecdf6069be2e23a2558dd6598c85a
     // link the API results here
 
     for (var i = 0; i < Math.min(response.results.length, 5); i++) {
@@ -130,33 +68,4 @@ $(".gallery").on("click", function () {
       console.log(response.results[i])
     }
   });
-<<<<<<< HEAD
 });
-
-
-  $("#japanese").on("click", function () {
-    var queryUrl = "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/textsearch/json?query=black+gray+tatoos+in+San+Diego&key=AIzaSyDYw0kEgd0PxKKZZ5GGBBgeygLHxpwv9bA";
-    var apiKey = "AIzaSyDYw0kEgd0PxKKZZ5GGBBgeygLHxpwv9bA";
-    // Performing our AJAX GET request
-    var saveResponse;
-    $.ajax({
-      url: queryUrl,
-      method: "GET"
-    }).then(function (response) {
-      console.log(response);
-      saveResponse = response;
-
-      $("#populator").empty();
-      // alert($(this).val());
-      // link the API results here
-      $("#populator").append("<p>" + saveResponse.results[0].name + " | " + "Rating: " + saveResponse.results[0].rating + " | " + saveResponse.results[0].formatted_address + " | " + saveResponse.results[0].photos[0].html_attributions[0]);
-      displayTatooShopResult(response.results[0]);
-      displayTatooShopResult(response.results[1]);
-      displayTatooShopResult(response.results[10]);
-      displayTatooShopResult(response.results[2]);
-    });
-
-  });
-=======
-});
->>>>>>> ab4fa6160ffecdf6069be2e23a2558dd6598c85a
