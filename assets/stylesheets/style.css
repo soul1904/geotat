@@ -111,6 +111,10 @@ width: 100%;
   animation-timing-function: ease-in;
 }
 
+/* #populator{
+  scroll-behavior: smooth;
+} */
+
 
 /*@MEDIA STARTS*/
 @media screen and (max-width: 600px) {
