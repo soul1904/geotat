@@ -1,15 +1,12 @@
 var longitude
-
 var latitude
+
 var value;
 
 $(".gallery").on("click", function () {
   value = $(this).children().attr("data-tattoo-style");
   alert(value);
 });
-
-
-
 
 ///GEO LOCATION API
 var x = document.getElementById("demo");
@@ -27,7 +24,6 @@ getLocation();
 function showPosition(position) {
   console.log(position);
   longitude = position.coords.longitude;
-
   latitude = position.coords.latitude;
 }
 
