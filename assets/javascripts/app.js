@@ -7,8 +7,7 @@ var value;
 // whenever the user clicks on ANY of the style buttons, the code picks up the data-tatoo-style from the clildren <a> tags 
 $(".gallery").on("click", function () {
   value = $(this).children().attr("data-tattoo-style");
-  alert(value);
-});
+  });
 
 // GEO LOCATION API
 var x = document.getElementById("demo");
