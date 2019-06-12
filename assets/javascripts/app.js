@@ -73,5 +73,13 @@ $(".gallery").on("click", function () {
       displayTatooShopResult(response.results[i]);
       console.log(response.results[i])
     }
+    //SCROLL DOWN FUNCTION FOR RESULTS//
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $("#populator").offset().top
+    }, 900);
   });
 });
+
+
