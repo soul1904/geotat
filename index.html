@@ -5,139 +5,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Geotat</title>
     <!--BOOTSTRAP CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--JQUIRY-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!--BOOTSTRAP BOOTHSSTRAP JAVA-->
+    <!--BOOTSTRAP BOOTSTRAP JAVA-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <!---OUR CSS-->
     <link rel="stylesheet" href="assets/stylesheets/style.css">
-
 </head>
 
 <body>
-    <div class="bg-img">
-        <video autoplay muted loop id="myVideo">
-            <source
-                src="https://player.vimeo.com/external/269410326.sd.mp4?s=8f87af379827062b0e3964a56ada0da43822450e&profile_id=164&oauth2_token_id=57447761"
-                type="video/mp4">
-        </video>
-        <!--MAIN SEC STARTS-->
-        <div class="mainsec">
-            <div class="container">
-                <div class="topnav">
-                    <!--BOOTSTRA NAV-->
-                    <!--HEADER-->
-                    <nav class="navbar navbar-expand-lg navbar-light">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                                <br>
-                                <li class="nav-item" href="#">
-                                    <a class="nav-link"> <img src="" width="50" height="50" alt=""> </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="index.html">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">About us</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact</a>
-                                </li>
-                            </ul>
-                            <form class="form-inline my-2 my-lg-0">
-                                <input class="form-control mr-sm-2" type="search" placeholder="Search"
-                                    aria-label="Search">
-                                <button id=searchBtn class="btn btn-outline-success my-2 my-sm-0"
-                                    type="submit">Search</button>
-                            </form>
-                        </div>
-                    </nav>
-                </div>
+    <video autoplay muted loop id="myVideo">
+        <source
+            src="https://player.vimeo.com/external/269410326.sd.mp4?s=8f87af379827062b0e3964a56ada0da43822450e&profile_id=164&oauth2_token_id=57447761"
+            type="video/mp4">
+    </video>
+    <!--MAIN SEC STARTS-->
+    <div class="mainsec">
+        <div class="container">
+            <div class="topnav">
+                <!--BOOTSTRA NAV-->
+                <!--HEADER-->
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <br>
+                            <li class="nav-item" href="#">
+                                <a class="nav-link"> <img src="assets/images/tattoo-logo.png" width="50" height="50"
+                                        alt=""> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button id=searchBtn class="btn btn-outline-success my-2 my-sm-0"
+                                type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
             </div>
-            <!--HEADER NAV END-->
-
-            <!--IMAGE BTNS -->
-            <div class="container">
-                <h1>Popular Tattoo Styles</h1>
-                <p>A tattoo is a form of body modification where a design is made by inserting ink, dyes and pigments,
-                    either
-                    indelible or temporary, into the dermis layer of the skin to change the pigment. These are the most
-                    popular
-                    styles!</p>
-                <div id="imgRow" class="row">
-                    <div class="gallery">
-                        <a id="black-and-gray" target="_blank" data-tattoo-style="black and gray tattoo">
-                            <img src="https://kickassthings.com/wp-content/uploads/2017/05/Beautiful-Hyper-Realistic-Rose-Tattoo-Tattoo-Done-By-Anatole-16.jpg"
-                                alt="black-and-gray" width="600" height="400">
-                        </a>
-                        <div class="desc">Black & Gray Realistic Tattoos</div>
-                    </div>
-
-                    <div class="gallery">
-                        <a id="new-school" target="_blank" data-tattoo-style="new school tattoo">
-                            <img src="https://cdn-images-1.medium.com/max/800/1*8i-Xa2cCXOl8q82U4KuqSg.jpeg"
-                                alt="new school tattoos" width="600" height="400">
-                        </a>
-                        <div class="desc">New School Style Tattoos</div>
-                    </div>
-
-                    <div class="gallery">
-                        <a id="old-school" target="_blank" data-tattoo-style="old school tattoo">
-                            <img src="https://tattooimages.biz/images/gallery/old_school_black_ink_forearm_tattoo_of1.jpg"
-                                alt="Old School tattoos" width="600" height="400">
-                        </a>
-                        <div class="desc">Old School Style Tattoos</div>
-                    </div>
-
-                    <div class="gallery">
-                        <a id="japanese" target="_blank" data-tattoo-style="japanese style tattoo">
-                            <img src="https://en.moda-l.info/wp-content/uploads/2018/12/60e36e58b6dca94cebdc6a17e5b8f0bf.jpg"
-                                alt="japanese-tattoos" width="600" height="400">
-                        </a>
-                        <div class="desc">Japanese Style Irezumi Tattoos</div>
-                    </div>
-
-
-
-                </div>
-
-            </div>
-            <br>
-            <div class="container">
-                <div class="row-2">
-
-                    <h1>Pick your style and we will suggest the best shops near you</h1>
-                    <div class="imagediv">
-                        <img src="http://www.sclance.com/pngs/white-divider-png/white_divider_png_1507642.png"
-                            alt="Nature" class="responsive">
-                    </div>
-                    <!-- <div class="form-group">
-                        <select class="form-control" id="tattoo-style-select">
-                            <option>Select</option>
-                            <option>Black & Gray Realistic</option>
-                            <option>New School</option>
-                            <option>Old School</option>
-                            <option>Japanese Style Irezumi</option>
-                        </select>
-                    </div> -->
-                    <span id="populator"></span>
-                </div>
-            </div>
-
         </div>
-        <!--ENDING MAIN-->
+        <!--HEADER NAV END-->
 
-        <!-- JavaScript -->
-        <script src="assets/javascripts/app.js"></script>
+        <!--IMAGE BTNS -->
+        <div class="container">
+            <h1>GEOTAT - Tattoo Shops Near You</h1>
+            <br><br>
+            <div id="imgRow" class="row">
+                <div class="gallery">
+                    <a id="black-and-gray" target="_blank" data-tattoo-style="black and gray tattoo">
+                        <img src="https://kickassthings.com/wp-content/uploads/2017/05/Beautiful-Hyper-Realistic-Rose-Tattoo-Tattoo-Done-By-Anatole-16.jpg"
+                            alt="black-and-gray" width="600" height="400">
+                    </a>
+                    <div class="desc">Black & Gray Realistic Tattoos</div>
+                </div>
+                <div class="gallery">
+                    <a id="new-school" target="_blank" data-tattoo-style="new school tattoo">
+                        <img src="https://cdn-images-1.medium.com/max/800/1*8i-Xa2cCXOl8q82U4KuqSg.jpeg"
+                            alt="new school tattoos" width="600" height="400">
+                    </a>
+                    <div class="desc">New School Style Tattoos</div>
+                </div>
+                <div class="gallery">
+                    <a id="old-school" target="_blank" data-tattoo-style="old school tattoo">
+                        <img src="https://tattooimages.biz/images/gallery/old_school_black_ink_forearm_tattoo_of1.jpg"
+                            alt="Old School tattoos" width="600" height="400">
+                    </a>
+                    <div class="desc">Old School Style Tattoos</div>
+                </div>
+                <div class="gallery">
+                    <a id="japanese" target="_blank" data-tattoo-style="japanese style tattoo">
+                        <img src="https://en.moda-l.info/wp-content/uploads/2018/12/60e36e58b6dca94cebdc6a17e5b8f0bf.jpg"
+                            alt="japanese-tattoos" width="600" height="400">
+                    </a>
+                    <div class="desc">Japanese Style Irezumi Tattoos</div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row-2">
+                <h3>RESULTS</h3>
+                <div class="imagediv">
+                    <img src="http://www.sclance.com/pngs/white-divider-png/white_divider_png_1507642.png" alt="Nature"
+                        class="responsive">
+                </div>
+                <span id="populator"></span>
+            </div>
+        </div>
+    </div>
+    <!--ENDING MAIN-->
+
+    <!-- JavaScript -->
+    <script src="assets/javascripts/app.js"></script>
 </body>
 
 </html>

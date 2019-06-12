@@ -1,3 +1,7 @@
+#searchBtn {
+  background-color: aqua;
+}
+
 body{
   background-color: black;
   color: #f2f2f2;
@@ -5,7 +9,7 @@ body{
   cursor: url('../images/cursor-transparent.png'), auto;
 }
 
-#myVideo{
+#myVideo {
 width: 100%;
 }
 
@@ -92,11 +96,10 @@ div.desc {
   display: none;
   }
   .bg-img {
-  width: auto ;
-  max-width: auto ;
-  height: auto ;
-  margin: 0 auto;
-  background-image: url("../images/header-mobile-640-new.jpg");   
+      width: auto ;
+      max-width: auto ;
+      height: auto ;
+      margin: 0 auto;      
   }
 }
 
@@ -104,14 +107,12 @@ div.desc {
     #searchBtn {
     display: none;
   }
-
   .bg-img {
-    width: auto ;
-    max-width: auto ;
-    height: 100% ;
-    max-width: 100%;
-    margin: 0 auto;
-    background-image: url("../images/header-mobile-640-new.jpg");  
+      width: auto ;
+      max-width: auto ;
+      height: 100% ;
+      max-width: 100%;
+      margin: 0 auto;  
   }
 }
 
@@ -120,10 +121,9 @@ div.desc {
     display: none;
   }
   .bg-img {
-    width: auto ;
-    max-width: auto ;
-    height: auto ;
-    margin: 0 auto;
-    background-image: url("../images/header-mobile-640-new.jpg");  
+      width: auto ;
+      max-width: auto ;
+      height: auto ;
+      margin: 0 auto;     
   }
 }
