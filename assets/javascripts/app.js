@@ -41,7 +41,10 @@ function displayTatooShopResult(shopData) {
   // append both to the populator id
   $("#populator").append(pTag);
 }
-
+//Animating Fade-In Container //
+$(document).ready(function() {
+  $(".container").fadeIn(3000);
+  });
 
 // this function records the changes in the tattoo-style-selection
 $(".gallery").on("click", function () {
